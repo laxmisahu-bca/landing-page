@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>developer | landing page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">Web<span> Creative</span></a>
+    <div class="toggle_btn">
+      <i class='bx bx-menu'></i>
+    </div>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="dropdown_menu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+   <section class="hero_section">
+     <div class="text_container" id="home">
+        <h2><span class="lg_text">Hi,</span> I am Hannah</h2>
+        <h1 class="lg_text">FULL STACK DEVELOPER</h1>
+     </div>
+   </section>
+   <section class="black_box">
+        <h2>WORK, I CAN DO FOR <span>YOU</span></h2>
+  </section>
+  <section class="work" id="services">
+    <div class="grid_item">
+       <div class="card">
+            <div class="image_container">
+                <img src="web.png"alt="web development"/>
+            </div>
+            <div class="card_container">
+                <h3>Web Development</h3>
+                <p>
+                    Web development refers to the creating, building, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. It is the creation of an application that works over the internet i.e. websites.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="grid_item">
+        <div class="card">
+            <div class="image_container">
+                <img src="mobile.png"alt="app development"/>
+            </div>
+            <div class="card_container">
+                <h3>App Development</h3>
+                <p>
+                    Mobile application development is the process of making software for smartphones, tablets and digital assistants, most commonly for the Android and iOS operating systems.
+                </p>
+           </div>
+       </div>
+    </div>
+    <div class="grid_item">
+        <div class="card">
+            <div class="image_container">
+                <img src="uiux.png"alt="UI UX design"/>
+            </div>
+            <div class="card_container">
+                <h3>UI UX Design</h3>
+                <p>
+                    User interface (UI) and user experience (UX) design are two different areas of digital design that can work together to create a strong user experience. 
+               </p>
+           </div>
+        </div>
+    </div>
+  </section>
+  <section class="bottom_section">
+    <div class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <p>If I can be of any help, please do not hesitate to contact me</p>
+      <p>hannah@example.test</p>
+    </div>
+    <div class="about" id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a skilled web designer with over 3years of experience in the industry.Thoughout my career, I have developed a  deep understanding of user experience(UX) and usertinterface(UI) principles.
+      </p>
+      <p>
+        I take pride in staying up-to-date with current design trends and leveraging my creativity to produce visually appealing and user-friendly websites.
+      </p>
+    </div>
+  </section>
+  <footer>Project By Hannah</footer>
+
+  <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function (){
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleBtnIcon.classList = isOpen
+      ?'bx bx-x'
+      :'bx bx-menu'
+    }
+  </script>
+</body>
+</html>
